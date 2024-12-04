@@ -1,0 +1,104 @@
+{
+  "tasks": [
+    {
+      "duration": "1.5h",
+      "title": "Local storage architecture",
+      "description": "Ensure seamless, robust storage with offline persistence"
+    },
+    {
+      "duration": "1h",
+      "title": "Local-first data storage",
+      "description": "Ensure compliance with privacy-first principles"
+    },
+    {
+      "duration": "2h",
+      "title": "Gemini Nano setup",
+      "description": "Fine-tune functionality to align with your vector database"
+    },
+    {
+      "duration": "1.5h",
+      "title": "Rich text editor functionality",
+      "description": "Core editor with basic formatting"
+    },
+    {
+      "duration": "1.5h",
+      "title": "Embed generation for notes",
+      "description": "Integrate with note structures and ensure embeddings are searchable"
+    },
+    {
+      "duration": "1.5h",
+      "title": "Design relationship mapping",
+      "description": "Define schema and ensure compatibility with your database"
+    },
+    {
+      "duration": "1.5h",
+      "title": "Configurable database interface",
+      "description": "CRUD for entities, relationships"
+    },
+    {
+      "duration": "0.5h",
+      "title": "Memory system for context retrieval",
+      "description": "Test embedding queries against memory"
+    },
+    {
+      "duration": "1h",
+      "title": "Markdown editor alternative",
+      "description": "Build and test rendering/conversion"
+    },
+    {
+      "duration": "2h",
+      "title": "Data extraction tools",
+      "description": "Identify target formats, design extraction logic"
+    },
+    {
+      "duration": "1h",
+      "title": "Manual/automatic graph management",
+      "description": "UI or backend automation for common use cases"
+    },
+    {
+      "duration": "1.5h",
+      "title": "Data visualization components",
+      "description": "Basic charting or mapping functionality"
+    },
+    {
+      "duration": "0.5h",
+      "title": "Export functionality",
+      "description": "CSV/JSON integration"
+    },
+    {
+      "duration": "1h",
+      "title": "Google Calendar + Drive",
+      "description": "Quick API integration for syncing"
+    },
+    {
+      "duration": "1h",
+      "title": "Slack + Notion",
+      "description": "Ensure bidirectional sync where applicable"
+    },
+    {
+      "duration": "1h",
+      "title": "Integration testing",
+      "description": "Testing and troubleshooting all integrations"
+    },
+    {
+      "duration": "0.5h",
+      "title": "Planning patterns",
+      "description": "Document planning patterns"
+    },
+    {
+      "duration": "0.5h",
+      "title": "Tool use patterns",
+      "description": "Document tool use patterns"
+    },
+    {
+      "duration": "0.5h",
+      "title": "Reflection patterns",
+      "description": "Document reflection patterns"
+    },
+    {
+      "duration": "0.5h",
+      "title": "Multi-agent collaboration",
+      "description": "Document multi-agent collaboration patterns"
+    }
+  ]
+}

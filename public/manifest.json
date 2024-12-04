@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "Gidget",
+  "version": "0.0.1",
+  "description": "Chrome extension + Svelte boilerplate",
+  "permissions": [
+    "ttsEngine",
+    "history",
+    "tabs",
+    "activeTab",
+    "storage",
+    "bookmarks",
+    "aiLanguageModelOriginTrial",
+    "sidePanel",
+    "scripting"
+  ],
+  "trial_tokens": [
+    "Aj4zf2eiAdZyQB7LNGad3nPWCIcpzTUgtrRJnz6fYwBpe90olBG045Uuk9T7DDrbQfLH8CRHz7kPm1FkhCCDxwUAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vZWZrbWFpYW5jbWtoaWRpam9obGxkY21jbGltYm1vYWIiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"
+  ],
+  "tts_engine": {
+    "voices": [
+      {
+        "voice_name": "Alice",
+        "lang": "en-US",
+        "event_types": ["start", "marker", "end"]
+      },
+      {
+        "voice_name": "Pat",
+        "lang": "en-US",
+        "event_types": ["end"]
+      }
+    ]
+  },
+  "action": {
+    "default_title": "Click to open side panel",
+    "default_icon": {
+      "16": "icons/image-16.png",
+      "32": "icons/image-32.png",
+      "48": "icons/image-48.png",
+      "128": "icons/image-128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "build/background.js"
+  },
+  "content_scripts": [
+    {
+      "css": ["content/styles.css"],
+      "js": ["content/scripts.js"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/image-16.png",
+    "32": "icons/image-32.png",
+    "48": "icons/image-48.png",
+    "128": "icons/image-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
