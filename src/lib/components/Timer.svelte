@@ -77,19 +77,19 @@
 
 <div
   class="flex flex-col items-center gap-8 p-0"
-  style="background-color: {timerColor}"
+  style="background-color: {true ? 'transparent' : timerColor}"
 >
   <!-- Timer Display with Halo -->
-  <div class="relative w-72 h-72 flex items-center justify-center">
+  <div class="relative w-72 h-72 flex items-center justify-center rounded-full">
     <!-- Animated Halo -->
-    <svg class="absolute w-full h-full -rotate-90 duration-300">
+    <svg class="absolute w-full h-full -rotate-90 duration-300 rounded-full scale-[0.88]">
       <circle
         cx="144"
         cy="144"
         r="140"
         fill="none"
         stroke-width="10"
-        class="opacity-50 transition-all duration-300"
+        class="opacity-60 transition-all duration-300"
         style="stroke: {haloStroke}; stroke-dasharray: {haloDasharray}; stroke-dashoffset: {haloDashoffset}; transition: all linear 1000ms !important;"
       />
     </svg>
@@ -103,7 +103,7 @@
       <div class="relative text-5xl font-light tracking-wider">
         <div
           class="countdown font-mono text-3xl flex items-center"
-          style={`color: white`}
+          style={`color: ${timerColor}`}
         >
           <span style={`--value: ${Math.floor(timeInSeconds / 3600)}`}></span>
           :
@@ -182,7 +182,7 @@
   </div>
 
   <!-- Prompt -->
-  <label for="prompt-input" class="form-control w-full">
+  <!-- <label for="prompt-input" class="form-control w-full">
     <div class="join w-full">
       <input
         id="prompt-input"
@@ -194,5 +194,5 @@
         <Icon name="send" />
       </button>
     </div>
-  </label>
+  </label> -->
 </div>

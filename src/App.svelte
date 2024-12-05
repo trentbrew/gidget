@@ -47,8 +47,8 @@
     </nav>
   </div>
 </div>
-<div class="fixed bottom-0 w-full z-99">
+<!-- <div class="fixed bottom-0 w-full z-99">
   <Alert type="info" message="How's it going?" />
   <Alert type="warning" message="Half way done!" />
   <Alert type="success" message="You got this!" />
-</div>
+</div> -->
