@@ -26,7 +26,9 @@
   })
 </script>
 
-<div class="max-w-2xl mx-auto p-6 bg-base-200 rounded-lg">
+<div
+  class="max-w-2xl mx-auto p-6 bg-base-100 rounded-lg flex flex-col justify-center items-center"
+>
   <h2 class="text-2xl font-bold mb-6">Settings</h2>
 
   <div class="space-y-6">
